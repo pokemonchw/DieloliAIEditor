@@ -143,6 +143,7 @@ class DataList(QListWidget):
     def update(self):
         """根据选项刷新当前绘制的列表"""
         self.update_clear = 1
+        self.edited_item = None
         self.clear()
         self.update_clear = 0
         for uid in cache_control.now_target_data:
