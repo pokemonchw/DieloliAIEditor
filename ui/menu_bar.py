@@ -13,13 +13,13 @@ class MenuBar(QMenuBar):
         self.font.setPointSize(16)
         self.setFont(self.font)
         self.select_ai_file_action = QWidgetAction(self)
-        self.select_ai_file_action.setText("选择AI数据文件")
+        self.select_ai_file_action.setText("选择AI数据文件  Ctrl+O")
         self.new_ai_file_action = QWidgetAction(self)
-        self.new_ai_file_action.setText("新建AI数据文件")
+        self.new_ai_file_action.setText("新建AI数据文件  Ctrl+N")
         self.save_ai_action = QWidgetAction(self)
-        self.save_ai_action.setText("保存AI数据文件")
+        self.save_ai_action.setText("保存AI数据文件  Ctrl+S")
         self.exit_action = QWidgetAction(self)
-        self.exit_action.setText("关闭编辑器")
+        self.exit_action.setText("关闭编辑器      Ctrl+Q")
         file_menu.addActions(
             [
                 self.select_ai_file_action,

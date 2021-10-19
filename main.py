@@ -4,6 +4,7 @@ import sys
 import json
 import os
 from PySide6.QtWidgets import QApplication,QFileDialog
+from PySide6.QtGui import QKeySequence, QShortcut
 from ui.window import Window
 from ui.menu_bar import MenuBar
 from ui.state_machine_tree import StateMachineTree
@@ -86,5 +87,9 @@ main_window.setMenuBar(menu_bar)
 main_window.add_widget(state_machine_tree)
 main_window.add_widget(data_list)
 main_window.completed_layout()
+QShortcut(QKeySequence(main_window.tr("Ctrl+O")),main_window,load_ai_data)
+QShortcut(QKeySequence(main_window.tr("Ctrl+N")),main_window,create_ai_data)
+QShortcut(QKeySequence(main_window.tr("Ctrl+S")),main_window,save_ai_data)
+QShortcut(QKeySequence(main_window.tr("Ctrl+Q")),main_window,exit_editor)
 main_window.show()
 app.exec()

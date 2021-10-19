@@ -76,7 +76,8 @@ class EffectMenu(QDialog):
             return
         if item.checkState(column) == Qt.Checked:
             item.setCheckState(0, Qt.Unchecked)
-            del cache_control.now_target_data[cache_control.now_target_id].effect[item.cid]
+            if item.cid in cache_control.now_target_data[cache_control.now_target_id].effect:
+                del cache_control.now_target_data[cache_control.now_target_id].effect[item.cid]
         else:
             item.setCheckState(0, Qt.Checked)
             cache_control.now_target_data[cache_control.now_target_id].effect[item.cid] = 1

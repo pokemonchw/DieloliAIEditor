@@ -35,6 +35,7 @@ target_is_heavy_feeling,角色性格类前提,交互对象是一个重情的人
 is_heavy_feeling,角色性格类前提,角色是一个重情的人
 target_is_apathy,角色性格类前提,交互对象是一个冷漠的人
 is_staraightforward,角色性格类前提,角色是一个爽直的人
+in_square,场景状态类前提,角色处于操场中
 in_cafeteria,场景状态类前提,角色处于取餐区
 in_restaurant,场景状态类前提,角色处于就餐区
 in_swimming_pool,场景状态类前提,角色处于游泳池
@@ -135,6 +136,7 @@ target_is_height,角色身材类前提,交互对象身高高于角色
 target_chest_is_cliff,角色身材类前提,交互对象胸围是绝壁
 target_average_stature_height,角色身材类前提,交互对象体型胖于平均体型
 target_chest_is_not_cliff,角色身材类前提,交互对象胸围不是绝壁
+is_average_stature_low,角色身材类前提,角色体型瘦于平均体型
 target_not_put_on_underwear,角色穿着类前提,交互对象没穿上衣
 target_not_put_on_skirt,角色穿着类前提,交互对象没穿短裙
 no_wear_underwear,角色穿着类前提,角色没穿上衣
@@ -155,6 +157,7 @@ wear_pants,角色穿着类前提,角色穿着裤子
 wear_skirt,角色穿着类前提,角色穿着短裙
 wear_shoes,角色穿着类前提,角色穿着鞋子
 wear_socks,角色穿着类前提,角色穿着袜子
+no_experience_in_sex,角色性经验类前提,角色没有性经验
 is_target_first_kiss,角色性经验类前提,角色是交互对象的初吻对象
 sex_experience_is_hight,角色性经验类前提,角色性技熟练
 rich_experience_in_sex,角色性经验类前提,角色性经验丰富
@@ -180,6 +183,7 @@ have_like_target,角色好感类前提,角色有喜欢的人
 leave_player_scene,角色行为类前提,角色离开了玩家所在场景
 target_is_sleep,角色行为类前提,交互对象正在睡觉
 target_is_sing,角色行为类前提,交互对象正在唱歌
+is_follow_player,辅助系统类前提,角色正在跟随玩家
 have_follow,辅助系统类前提,角色拥有跟随对象
 no_in_follow_target_scene,辅助系统类前提,角色跟随的对象不在当前场景
 target_is_follow_player,辅助系统类前提,交互对象正在跟随玩家
