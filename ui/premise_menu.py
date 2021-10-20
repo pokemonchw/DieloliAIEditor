@@ -38,6 +38,7 @@ class PremiseMenu(QDialog):
                 now_root = QTreeWidgetItem(tree)
                 now_root.setText(0, now_type)
                 premise_list = list(cache_control.premise_type_data[now_type])
+                premise_list.sort()
                 for premise in premise_list:
                     premise_node = TreeItem(now_root)
                     premise_node.cid = premise
